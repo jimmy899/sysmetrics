@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		BF5C8B0026FAD37D00DA15EC /* swift01 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swift01; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5C8B0326FAD37D00DA15EC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BF5C8B0A26FAD65F00DA15EC /* hidtemp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hidtemp.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				BF5C8B0326FAD37D00DA15EC /* main.swift */,
+				BF5C8B0A26FAD65F00DA15EC /* hidtemp.h */,
 			);
 			path = swift01;
 			sourceTree = "<group>";
@@ -246,6 +248,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = swift01/hidtemp.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -255,6 +258,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = swift01/hidtemp.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
